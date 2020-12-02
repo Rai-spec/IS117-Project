@@ -1,0 +1,298 @@
+/*  DEVELOPER: Shahmeer Rai, IS117-005, Fall 2020  */
+
+/* CSS FOR ALL PAGES */
+
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+}
+html body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Top bar */
+
+.top-bar{
+    background-color: black;
+}
+.top-bar h2{
+    text-align: center;
+    color: white;
+    line-height: 60px;
+}
+
+/* Navbar */
+.navbar{
+    margin-top: -10px;
+}
+.home-active{
+    background-color: orange;
+    color: white !important;
+}
+.nav-link:hover{
+    background-color: orange;
+    color: white !important;
+}
+
+
+/* Footer */
+.footer{
+    background-color: black;
+    margin-top: -50px;
+    margin-bottom: -10px;
+    position: sticky;
+    bottom: 0;
+
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+}
+.list{
+    display: flex;
+    font-weight: 500;
+    list-style: none;
+    color: white;
+}
+.footer h6{
+
+    color: white;
+    padding: 15px;
+}
+
+/* End - CSS FOR ALL PAGES */
+
+/* Home page css */
+
+/* Home image */
+.image{
+    width: 100%;
+    height: auto;
+    object-position: center;
+}
+.home-btn{
+    background-color: orange;
+    position: relative;
+    bottom: 150px;
+    width: 200px;
+}
+.home-btn a{
+    color: white;
+}
+
+.home-btn a:hover{
+    color: white;
+    text-decoration: none;
+}
+.clubs{
+    text-align: center;
+}
+.heading{
+    font-weight: bold;
+    text-align: center;
+}
+
+/* About Us CSS */
+.about-section{
+    margin-top: 90px;
+    margin-bottom: 140px;
+}
+.card{
+    width: 80%;
+}
+.card-header{
+    background-color: orange !important;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+.view{
+    background-color: orange !important;
+    color: white;
+    outline: none !important;
+    border: none !important;
+}
+
+/* Shop Page */
+.card-img-top{
+   height: 200px;
+   margin-top: 10px;
+}
+.card-link{
+    background-color: orange !important;
+    color: white;
+    padding: 10px;
+
+}
+
+/* Weekly results page */
+.weekly-result{
+    width: 80%;
+}
+.tv-img{
+    height: 100%;
+    width: 25rem;
+}
+.btn-highlights{
+    background-color: orange !important;
+}
+.btn-highlights a{
+    color: white;
+}
+
+/* Subscribe page */
+.subscribe{
+    background-color: orange;
+    color: white;
+    padding: 30px;
+}
+.btn-submit{
+    background-color: orange;
+    width: 200px;
+}
+
+.btn-submit a{
+    color: white;
+
+}
+
+/* responsiveness */
+@media (min-width: 320px) and (max-width: 480px) {
+    .image{
+        width: 100%;
+        object-fit: cover;
+    }
+    .home-active{
+        background-color: transparent;
+        color: initial !important;
+    }
+    .home-btn{
+        margin-top: 70px;
+    }
+    .card{
+        margin: 30px;
+    }
+
+    .card-2{
+        width: 270px !important;
+        position: relative;
+        right: 30px;
+    }
+    .tv-img{
+       width: 100%;
+    }
+    .footer{
+        margin-bottom: -40px;
+    }
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-list h6{
+        margin-left: 20px;
+    }
+    .list{
+        margin-left: 60px;
+    }
+    .email , .location{
+        margin-top: 25px;
+    }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+    .image{
+        width: 100%;
+        object-fit: cover;
+    }
+    .home-btn{
+        margin-top: 50px;
+    }
+    .home-active{
+        background-color: transparent;
+        color: initial !important;
+    }
+    .card{
+        margin: 30px;
+    }
+    .club-cards{
+        margin-left: 100px;
+    }
+    .shop-cards{
+        margin-left: 100px;
+    }
+    .card-2{
+       margin-left: -30px;
+    }
+    .tv-img{
+        width: 100%;
+    }
+
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-list h6{
+        margin-left: 20px;
+    }
+    .list{
+        margin-left: 60px;
+    }
+    .email , .location{
+        margin-top: 25px;
+    }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+    .image{
+        width: 100%;
+        object-fit: cover;
+    }
+    .home-active{
+        background-color: transparent;
+        color: initial !important;
+    }
+    .card{
+        margin: 20px;
+    }
+    .club-cards{
+        margin-left: 110px;
+    }
+    .shop-cards{
+        margin-left: 110px;
+    }
+    .tv-img{
+        width: 100%;
+    }
+    .email , .location{
+        margin-top: 25px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .image{
+        width: 100%;
+        object-fit: cover;
+    }
+    .home-active{
+        background-color: transparent;
+        color: initial !important;
+    }
+    .club-cards{
+        width: 170px !important;
+    }
+    .shop-cards{
+        width: 220px !important;
+    }
+
+    .tv-img{
+        width: 100%;
+    }
+
+    .card-2{
+        width: 280px !important;
+    }
+
+}

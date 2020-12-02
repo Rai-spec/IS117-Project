@@ -1,0 +1,146 @@
+<!-- DEVELOPER: Shahmeer Rai, IS117-005, Fall 2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soccer</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- bootstrap cdn links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="top-bar">
+    <h2>AllStarsSoccer.com</h2>
+</div>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-5 active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown px-5">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Shop New Gears
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="shop.html">Gloves</a>
+                    <a class="dropdown-item" href="shop.html">Shirts</a>
+                    <a class="dropdown-item" href="shop.html">Gears</a>
+                </div>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link" href="result.html">Weekly Results</a>
+            </li>
+            <li class="nav-item px-5">
+                <a class="nav-link  home-active" href="subscribe.html">Contact us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Subscribe section -->
+<center>
+<div class="subscribe">
+<h2>Hava A Query or Want To Know More?</h2>
+    <h5>Just Contact us!</h5>
+    <br>
+    <button class="btn btn-subscribe"><a href="#form">Contact Now</a></button>
+</div>
+</center>
+<br>
+<br>
+
+<!-- Form -->
+<div class="form-section">
+    <div class="container">
+                <!-- Form -->
+                <form class="form" id="form">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <input type="text" class="form-control" placeholder=" Name" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 email">
+                            <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder=" Email"
+                            />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder=" Phone Number"
+                            />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 location">
+                            <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder=" Location"
+                            />
+                        </div>
+                    </div>
+                    <br />
+
+                    <textarea
+                            class="form-control"
+                            rows="6"
+                            id="message"
+                            placeholder="Your Message"
+                    ></textarea>
+
+                    <p>
+                        Alert:Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                        aliquyam erat,
+                    </p>
+
+                    <br />
+                    <br />
+<center>
+                    <button class="btn btn-submit"><a href="#">Submit</a></button>
+</center>
+                </form>
+            </div>
+        </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-list">
+        <h6>Copyright @ 2020. All Rights are Reserved</h6>
+        <ul class="pt-3 list">
+            <li>Terms of Use</li>
+            <li class="pl-5">Privacy policy</li>
+        </ul>
+    </div>
+
+</footer>
+</body>
+</html>
